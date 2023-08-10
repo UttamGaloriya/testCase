@@ -29,7 +29,11 @@ describe('AppComponent', () => {
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
+    const compiled = fixture.nativeElement;
     expect(compiled.querySelector('.content span')?.textContent).toContain('testCase app is running!');
   });
+
+  test('add two number', () => {
+    console.log("run")
+  })
 });
